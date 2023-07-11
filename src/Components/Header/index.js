@@ -1,7 +1,13 @@
 import React from 'react'
+import Category from '../Categories'
 
-export default function header() {
+export default function Header({onFilter}) {
   return (
-    <div>Card</div>
+    <div>
+      <>
+      <img className='main-plc' src='' />
+        <Category onFilter={onFilter}/>
+      </>
+    </div>
   )
 }

@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default function category() {
+export default function Category({onFilter}) {
+  const categories = ["All", "Pizza", "Fruits", "Drink", "Coffi"]
   return (
-    <div>category</div>
+    <>
+      <ul className='horizontal'>
+        {
+          categories.map((elm, i ) => <li onClick={() => onFilter(elm)} key = {i}>{elm}</li> )
+        }
+      </ul>
+    </>
   )
 }

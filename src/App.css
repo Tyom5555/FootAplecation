@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+.main-plc {
+  width: 100%;
+  height: 300px;
+}
+h1 {
+  text-align: center;
+}
+.horizontal {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.horizontal > li {
+  cursor: pointer;
+}
+.horizontal > li:hover {
+  text-decoration: underline rgb(106, 122, 127);
+}
+.productList{
+  width: 90%;
+  margin: auto;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-auto-rows: auto;
+
+
+}
+.ProductItem > img {
+  width: 200px;
+  height: 200px;
+}
+.cardItem{
+  line-height: 5px;
+  background-color: silver;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cardItem .title{
+  font-weight: bold;
+}
+.cardItem .yadGumary{
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+.del-btn{
+  color: white;
+  border: none;
+  background-color: blueviolet;
+  padding: 4px;
+  margin-left: 10px;
+  font-weight: bold;
+}
